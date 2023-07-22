@@ -23,13 +23,16 @@ User-Friendly Interface: The Flask web application allows users to effortlessly 
 TongueDiseaseNet holds the potential to significantly enhance the speed and accuracy of tongue disease diagnosis, enabling early detection and proactive treatment. With its state-of-the-art technology and accessible interface, this project is poised to make a positive impact on healthcare and improve the lives of countless individuals affected by tongue diseases.
 
 ## Homepage
-! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (259).png]
+
+![Screenshot (259)](https://github.com/shivangis22/tonguedetection/assets/71970506/9131b358-7c28-4097-a4ea-31bde86c0289)
 
 ## Uploading image
-! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (261).png]
+
+![Screenshot (261)](https://github.com/shivangis22/tonguedetection/assets/71970506/9ef31c02-6627-4a3f-82e2-66284b63171f)
 
 ## Result of prediction
-! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (262).png]
+
+![Screenshot (262)](https://github.com/shivangis22/tonguedetection/assets/71970506/037d237c-3ab5-476e-8aad-9567bbf965e0)
 
 ## Installation and setup
 Pull the contents of the repository and install the required libraries using the command 
