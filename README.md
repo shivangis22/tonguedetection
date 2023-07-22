@@ -1,4 +1,6 @@
 # TongueDiseaseNet - A Deep Learning Solution for Tongue Disease Detection and Diagnosis
+TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project offers a reliable and efficient tool to detect and identify oral lichens, leukemia, hairy tongue, oral cancer, and oral thrush.
+
 
 TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.
 
