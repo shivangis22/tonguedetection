@@ -1,0 +1,154 @@
+{
+    "disease_condition": [{
+            "predicted_class": "leokoplakiatonguedataset",
+            "condition": "Leukoplakia",
+            "description": "A type of leukoplakia called hairy leukoplakia, sometimes called oral hairy leukoplakia, primarily affects people whose immune systems have been weakened by disease, especially HIV/AIDS.",
+            "symptoms": [
+                "White or grayish patches that can't be wiped away",
+                "Irregular or flat-textured",
+                "Thickened or hardened in areas",
+                "Raised, red lesions (speckled leukoplakia or erythroplakia), which are more likely to show precancerous changes"
+            ],
+            "causes": [
+                "The cause of leukoplakia is unknown.",
+                "Chronic irritation, such as tobacco use (including smoking and chewing), appears to be responsible for most cases.",
+                "Regular users of smokeless tobacco products often develop leukoplakia where they hold the tobacco against their cheeks."
+            ],
+            "treatment": [
+                "Using a laser to remove the patches.",
+                "Using light-activated cancer drugs (photodynamic therapy).",
+                "Using cryotherapy, which is extreme cold that freezes and kills abnormal cells and removes the patches.",
+                "Using an electrically heated needle or other instrument to remove the patches (electrocauterization)."
+            ]
+        },
+        {
+            "predicted_class": "orallichensdataset",
+            "condition": "Oral Lichen",
+            "description": "Oral lichen planus is a long-term (chronic) disease that affects the inside of your mouth. Technically, lichen planus can develop on your skin or anywhere you have mucosa. But when lichen planus appears in your mouth, it is called oral lichen planus.",
+            "symptoms": [
+                "Reticular oral lichen planus: White patches or thread-like lesions on the inside of your cheeks, typically raised slightly. Usually not painful.",
+                "Erosive oral lichen planus: Bright red gum tissue, ulcers can develop on gums, tongue, or the floor of the mouth. Eating and drinking hot, spicy, or acidic foods can be painful."
+            ],
+            "causes": [
+                "Research suggests that genetic makeup and immune system both play a role.",
+                "Some people develop oral lichen planus after taking certain medications, such as Beta-blockers or Nonsteroidal anti-inflammatory drugs (NSAIDs).",
+                "Certain diseases may also result in oral lichen planus, such as Hepatitis B or Primary biliary cirrhosis."
+            ],
+            "treatment": [
+                "Milder forms of the disease usually go away on their own over time, especially if you discontinue medications that trigger the condition.",
+                "For more severe cases, treatments include:",
+                "Corticosteroids",
+                "Lidocaine",
+                "Tacrolimus",
+                "Dapsone",
+                "Cyclosporine"
+            ]
+        },
+        {
+            "predicted_class": "oralthrushdataset",
+            "condition": "Oral Thrush",
+            "description": "Oral thrush is a fungal infection of the mouth. It's not contagious and is usually successfully treated with antifungal medication. It's also called oral candidosis (or candidiasis) because it's caused by a group of yeasts called Candida.",
+            "causes": [
+                "Oral thrush and other yeast infections are caused by an overgrowth of C. Albicans. It exists naturally in the microbiomes of 50% of the population.",
+                "It’s typical for a small amount of C. Albicans to live in your mouth without causing harm. When your immune system is working properly, beneficial bacteria in your body help keep C. Albicans under control.",
+                "But if your immune system is compromised or the balance of microorganisms in your body is disrupted, the fungus can grow out of control."
+            ],
+            "symptoms": [
+                "White or yellow spots on your inner cheeks, tongue, tonsils, gums, or lips",
+                "Slight bleeding if the spots are scraped",
+                "Soreness or burning in your mouth",
+                "A cotton-like sensation in your mouth",
+                "Dry, cracked skin at the corners of your mouth",
+                "Difficulty swallowing",
+                "A bad taste in your mouth",
+                "A loss of taste",
+                "Redness, irritation, and pain under dentures (denture stomatitis)"
+            ],
+            "treatment": [
+                "Medications for the treatment of oral thrush include:",
+                "Fluconazole (Diflucan)",
+                "Generic nystatin",
+                "Itraconazole (Sporanox)",
+                "Amphotericin B (Ambisome, Fungizone)"
+            ]
+        },
+        {
+            "predicted_class": "hairytonguedataset",
+            "condition": "Hairy Tongue",
+            "description": "Hairy tongue occurs when filiform papillae do not shed properly, and there is a buildup of the skin protein known as keratin. When this happens, food, bacteria, or yeast can accumulate in the over-keratinized filiform papillae network and cause odd discoloration.",
+            "causes": [
+                "A soft diet: A lack of stimulation for abrasion to the surface of the tongue can prevent sufficient shedding of the papillae.",
+                "Poor oral hygiene: This can cause a buildup of bacteria or yeast, contributing to hairy tongue.",
+                "Certain substances: Tobacco use, as well as excessive consumption of alcohol, coffee or tea, for example.",
+                "Dehydration or dry mouth: Lack of moisture in the mouth can make a person more prone to having hairy tongue.",
+                "Certain medications: These include some treatments for stomach acid reflux.",
+                "Oral hygiene products: Certain types of mouthwash, such as those containing peroxide."
+            ],
+            "symptoms": [
+                "A burning sensation on the tongue",
+                "A tickling on the roof of the mouth when swallowing",
+                "A gagging sensation",
+                "Bad breath, otherwise known as halitosis",
+                "A metallic taste in the mouth",
+                "Nausea"
+            ],
+            "treatment": [
+                "Treatment and prevention are typically achieved through changes to a person’s lifestyle that may have triggered the onset of hairy tongue. Oral hygiene and regular visits to the dentist are the best ways to stop hairy tongue from occurring.",
+                "It is also essential to maintain a nutritious and well-balanced diet, containing a good balance of fresh fruits, vegetables, grains, and minimal sugar to promote oral health.",
+                "Consuming a sufficient amount of water throughout the day will also help to keep the mouth clean.",
+                "Avoiding or limiting the consumption of substances that are associated with hairy tongue, such as coffee, tea, alcohol, or tobacco.",
+                "Brushing the tongue or using a specialized tongue scraper to help with oral hygiene."
+            ]
+        },
+        {
+            "predicted_class": "oralcancerdataset",
+            "condition": "Oral Cancer",
+            "description": ["Oral cancer affects your lips and the first parts of your tongue, mouth roof and floor. It also affects your oropharynx — the last part of your tongue and roof of your mouth, your tonsils and the sides and back of your throat.",
+
+                "TI: The tumor in your mouth measures 2 centimeters or less.",
+                "T2: The tumor is 2 centimeters or smaller but isn’t larger than 4 centimeters.",
+                "T3: The tumor is larger than 4 centimeters."
+            ],
+            "causes": [
+                "Smoke cigarettes, cigars or pipes.",
+                "Use smokeless tobacco products such as chewing tobacco, dip, snuff or water pipes (hookah or shisha).",
+                "Regularly drink excessive amounts of alcohol.",
+                "Spend a lot of time in the sun without protecting their lips with sunblock.",
+                "Have human papillomavirus (HPV).",
+                "Have a family history of oral cancer."
+            ],
+            "symptoms": [
+                "Sores on your lip or inside your mouth that bleed easily and don’t heal within two weeks.",
+                "Rough spots or crusty areas on your lips, gums or inside of your mouth.",
+                "Areas in your mouth that bleed for no obvious reason.",
+                "Numbness, pain or tenderness on your face and neck or in your mouth that occur without apparent cause.",
+                "Difficulty chewing or swallowing, speaking or moving your jaw or tongue.",
+                "Unintentional weight loss.",
+                "Earache.",
+                "Chronic bad breath."
+            ],
+            "treatment": [
+                "Primary tumor surgery: Healthcare providers remove tumors through your mouth or an incision in your neck.",
+                "Glossectomy: This is the partial or total removal of your tongue.",
+                "Mandibulectomy: This is surgery for oral cancer in your jawbone.",
+                "Sentinel lymph node biopsy: This test helps healthcare providers know if cancer has spread beyond the original oral cancer.",
+                "Neck dissection: This surgery is done to remove lymph nodes from your neck.",
+                "Reconstruction: Surgery that removes large areas of tissue might be followed by reconstructive surgery to fill gaps left by the tumor or replace part of your lips, tongue, palate or jaw. In some cases, reconstructive surgery is done by taking healthy bone and tissue from other areas of your body."
+            ]
+        },
+        {
+            "predicted_class": "healthytonguedataset",
+            "condition": "Healthy Tongue",
+            "description": "Healthy tongue color is pink, though the specific shades may range from light to dark. A healthy, normal-colored tongue also has small bumps all over its surface. These are papillae. They help you speak, taste, chew and swallow.",
+            "causes": [
+
+            ],
+            "symptoms": [
+
+            ],
+            "treatment": [
+
+            ]
+        }
+    ]
+}
