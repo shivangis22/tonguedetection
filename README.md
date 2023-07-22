@@ -1,4 +1,4 @@
-#TongueDiseaseNet - A Deep Learning Solution for Tongue Disease Detection and Diagnosis
+# TongueDiseaseNet - A Deep Learning Solution for Tongue Disease Detection and Diagnosis
 
 TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.
 
@@ -22,16 +22,16 @@ User-Friendly Interface: The Flask web application allows users to effortlessly 
 
 TongueDiseaseNet holds the potential to significantly enhance the speed and accuracy of tongue disease diagnosis, enabling early detection and proactive treatment. With its state-of-the-art technology and accessible interface, this project is poised to make a positive impact on healthcare and improve the lives of countless individuals affected by tongue diseases.
 
-##Homepage
-![C:\Users\Shivangi\Pictures\Screenshots\Screenshot (259).png]
+## Homepage
+! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (259).png]
 
-##Uploading image
-![C:\Users\Shivangi\Pictures\Screenshots\Screenshot (261).png]
+## Uploading image
+! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (261).png]
 
-##Result of prediction
-![C:\Users\Shivangi\Pictures\Screenshots\Screenshot (262).png]
+## Result of prediction
+! [C:\Users\Shivangi\Pictures\Screenshots\Screenshot (262).png]
 
-##Installation and setup
+## Installation and setup
 Pull the contents of the repository and install the required libraries using the command 
 ```
 pip install -r /path/to/requirements.txt
