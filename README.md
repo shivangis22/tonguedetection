@@ -2,13 +2,13 @@
 TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.
 
 ## Table of Contents
-* [Introduction](/blob/main/README.md#introduction)
-* [Dataset](/blob/main/README.md#dataset)
-* [Deep Learning model](/blob/main/README.md#deep-learning-model)
-* [API](/blob/main/README.md#api)
-* [Web Application](/blob/main/README.md#web-application)
-* [Key Features](/blob/main/README.md#key-features)
-* [Impact](/blob/main/README.md#impact)
+* [Introduction](#introduction)
+* [Dataset](#dataset)
+* [Deep Learning model](#deep-learning-model)
+* [API](#api)
+* [Web Application](#web-application)
+* [Key Features](#key-features)
+* [Impact](#impact)
 
 ## Introduction
 TongueDiseaseNet is dedicated to advancing the diagnosis of tongue diseases through the application of cutting-edge deep-learning techniques. By utilizing a comprehensive and diverse dataset of tongue images, the project's aim is to achieve accurate disease classification and offer valuable insights to healthcare professionals and individuals.
