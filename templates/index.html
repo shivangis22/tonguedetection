@@ -16,13 +16,12 @@
         }
         
         .headingText {
-            background-color: #112B3C;
-            padding: 0.5em 5em;
+            padding-top: 30px;
             font-family: 'DM Serif Display', serif;
         }
         
         h1 {
-            color: #ffffff;
+            color: #000000;
             font-weight: bold;
         }
         
@@ -58,16 +57,13 @@
 </head>
 
 <body>
-    <div class="headingText text-center">
-        <h1 class="headingText">TongueDiseaseNet</h1>
-
-    </div>
 
 
 
-    <div class="container dataContent ">
 
-        <div class="row">
+    <div class="container dataContent " style="padding:0; margin:0; height:100vh;">
+
+        <div class="row" style="height:100vh;">
             <!-- <div class="col" style="height: 100px; width: 100px ;">
                 <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.zhdk.ch%2Ffile%2Flive%2F4c%2F4cff72d7c48d45da2d9eeaed59a8c5f501a6e358%2Flarge.jpg&tbnid=XrKIcpU4kxHR6M&vet=12ahUKEwj40amjvOqAAxXhxqACHby6AYMQMygPegQIARBv..i&imgrefurl=https%3A%2F%2Fwww.zhdk.ch%2Fen%2Fresearchproject%2Ftofi--tongue-fitness-570990&docid=UIdHaAAIUx5F-M&w=1280&h=958&q=tongue%20collage&ved=2ahUKEwj40amjvOqAAxXhxqACHby6AYMQMygPegQIARBv"
                     alt="image" style="height: 100px; width: 100px ;">
@@ -75,14 +71,18 @@
 
             </div> -->
             <div class="col" style="padding:0;">
-                <img src="./image.jpg" alt="image" style="height: auto; width: 100% ; opacity:0.9;">
+                <img src="{{url_for('static', filename='image.jpg')}}" alt="image" style="height: 100%; width: 100% ; opacity:0.9;">
             </div>
             <div class="col">
-                <p class="text-center des">TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project
-                    offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.</p>
-                <h4>UPLOAD IMAGE:</h4>
+                <div class="headingText text-center">
+                    <h1 class="headingText">TongueDiseaseNet</h1>
 
-                <form class="p-3 text-center" action="/" , method="post" enctype="multipart/form-data">
+                </div>
+                <p class="des" style="padding: 20px; margin: 30px;">TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project
+                    offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.</p>
+                <h4 style="padding: 30px; margin: 30px;">UPLOAD IMAGE:</h4>
+
+                <form style="padding: 30px; margin: 30px;" class="p-3 text-center" action="/" , method="post" enctype="multipart/form-data">
                     <input class="form-control" type="file" name="imagefile" id="file" onchange="loadFile(event)">
                     <p><img id="output" width="200" /></p><br/>
                     <input class="btn submitButton" type="submit" value="Predict">
@@ -95,16 +95,16 @@
                 </script>
 
                 {% if prediction %}
-                <h3 class="text-center"> Detected prediction:</h3>
-                <p class="text-center"> {{prediction}}</p>
+                <h3 style="padding: 20px; margin: 30px;" class="text-center"> Detected prediction:</h3>
+                <p style="padding: 20px; margin: 30px;" class="text-center"> {{prediction}}</p>
 
-                <h3 class="text-center">Result Confidence:</h3>
-                <p class="text-center">{{confidence}}</p>
+                <h3 style="padding: 20px; margin: 30px;" class="text-center">Result Confidence:</h3>
+                <p style="padding: 20px; margin: 30px;" class="text-center">{{confidence}}</p>
 
-                <p> {{description}}</p>
+                <p style="padding: 20px; margin: 30px;"> {{description}}</p>
 
-                <h3 class="text-center">Symptoms:</h3>
-                <ul id="symptoms">
+                <h3 style="padding: 20px; margin: 30px;" class="text-center">Symptoms:</h3>
+                <ul style="padding: 20px; margin: 30px;" id="symptoms">
                 </ul>
                 <script>
                     var data = JSON.parse('{{symptoms | tojson | safe}}');
@@ -119,8 +119,8 @@
                     }
                 </script>
 
-                <h3 class="text-center">Causes:</h3>
-                <ul id="causes">
+                <h3 style="padding: 20px; margin: 30px;" class="text-center">Causes:</h3>
+                <ul style="padding: 20px; margin: 30px;" id="causes">
                 </ul>
                 <script>
                     var data = JSON.parse('{{causes | tojson | safe}}');
@@ -135,8 +135,8 @@
                     }
                 </script>
 
-                <h3 class="text-center">Treatments:</h3>
-                <ul id="treatment">
+                <h3 style="padding: 20px; margin: 30px;" class="text-center">Treatments:</h3>
+                <ul style="padding: 20px; margin: 30px;" id="treatment">
                 </ul>
                 <script>
                     var data = JSON.parse('{{treatment | tojson | safe}}');
