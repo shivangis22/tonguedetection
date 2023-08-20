@@ -4,6 +4,7 @@
 <head>
     <title>Tongue Disease Detection</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=M+PLUS+Rounded+1c:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap" rel="stylesheet">
@@ -16,13 +17,20 @@
         
         .headingText {
             background-color: #112B3C;
-            padding: 1em 5em;
+            padding: 0.5em 5em;
             font-family: 'DM Serif Display', serif;
         }
         
         h1 {
             color: #ffffff;
             font-weight: bold;
+        }
+        
+        .container-2 {
+            background-image: url('../img.jpg');
+            border: 0.25rem solid black;
+            background-size: cover;
+            color: pink;
         }
         
         .submitButton {
@@ -32,87 +40,121 @@
             padding: 10px 30px;
         }
         
+        .des {
+            margin: 2em 0;
+            color: #112B3C;
+            justify-content: center;
+        }
+        
         h3 {
             font-weight: bold;
+        }
+        
+        h4 {
+            color: #F66B0E;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="headingText">
-        <h1 class="text-center">Tongue Disease Detection</h1>
+    <div class="headingText text-center">
+        <h1 class="headingText">TongueDiseaseNet</h1>
+
     </div>
 
-    <div class="container dataContent">
-        <form class="p-3 text-center" action="/" , method="post" enctype="multipart/form-data">
-            <input class="form-control" type="file" name="imagefile" id="file" onchange="loadFile(event)">
-            <p><img id="output" width="200" /></p><br/>
-            <input class="btn submitButton" type="submit" value="Predict">
-        </form>
-        <script>
-            var loadFile = function(event) {
-                var image = document.getElementById('output');
-                image.src = URL.createObjectURL(event.target.files[0]);
-            };
-        </script>
 
-        {% if prediction %}
-        <h3 class="text-center"> Detected prediction:</h3>
-        <p class="text-center"> {{prediction}}</p>
 
-        <h3 class="text-center">Result Confidence:</h3>
-        <p class="text-center">{{confidence}}</p>
+    <div class="container dataContent ">
 
-        <p> {{description}}</p>
+        <div class="row">
+            <!-- <div class="col" style="height: 100px; width: 100px ;">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.zhdk.ch%2Ffile%2Flive%2F4c%2F4cff72d7c48d45da2d9eeaed59a8c5f501a6e358%2Flarge.jpg&tbnid=XrKIcpU4kxHR6M&vet=12ahUKEwj40amjvOqAAxXhxqACHby6AYMQMygPegQIARBv..i&imgrefurl=https%3A%2F%2Fwww.zhdk.ch%2Fen%2Fresearchproject%2Ftofi--tongue-fitness-570990&docid=UIdHaAAIUx5F-M&w=1280&h=958&q=tongue%20collage&ved=2ahUKEwj40amjvOqAAxXhxqACHby6AYMQMygPegQIARBv"
+                    alt="image" style="height: 100px; width: 100px ;">
 
-        <h3 class="text-center">Symptoms:</h3>
-        <ul id="symptoms">
-        </ul>
-        <script>
-            var data = JSON.parse('{{symptoms | tojson | safe}}');
 
-            console.log(data);
-            console.log(data.length);
-            let list_s = document.getElementById("symptoms");
-            for (i = 0; i < data.length; ++i) {
-                let li = document.createElement('li');
-                li.innerText = data[i];
-                list_s.appendChild(li);
-            }
-        </script>
+            </div> -->
+            <div class="col" style="padding:0;">
+                <img src="./image.jpg" alt="image" style="height: auto; width: 100% ; opacity:0.9;">
+            </div>
+            <div class="col">
+                <p class="text-center des">TongueDiseaseNet is an innovative and advanced deep-learning project that aims to revolutionize the diagnosis of various tongue diseases using tongue images. Leveraging the power of machine learning and artificial intelligence, this project
+                    offers a reliable and efficient tool to detect and identify oral lichens, leukaemia, hairy tongue, oral cancer, and oral thrush.</p>
+                <h4>UPLOAD IMAGE:</h4>
 
-        <h3 class="text-center">Causes:</h3>
-        <ul id="causes">
-        </ul>
-        <script>
-            var data = JSON.parse('{{causes | tojson | safe}}');
+                <form class="p-3 text-center" action="/" , method="post" enctype="multipart/form-data">
+                    <input class="form-control" type="file" name="imagefile" id="file" onchange="loadFile(event)">
+                    <p><img id="output" width="200" /></p><br/>
+                    <input class="btn submitButton" type="submit" value="Predict">
+                </form>
+                <script>
+                    var loadFile = function(event) {
+                        var image = document.getElementById('output');
+                        image.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                </script>
 
-            console.log(data);
-            console.log(data.length);
-            let list = document.getElementById("causes");
-            for (i = 0; i < data.length; ++i) {
-                let li = document.createElement('li');
-                li.innerText = data[i];
-                list.appendChild(li);
-            }
-        </script>
+                {% if prediction %}
+                <h3 class="text-center"> Detected prediction:</h3>
+                <p class="text-center"> {{prediction}}</p>
 
-        <h3 class="text-center">Treatments:</h3>
-        <ul id="treatment">
-        </ul>
-        <script>
-            var data = JSON.parse('{{treatment | tojson | safe}}');
+                <h3 class="text-center">Result Confidence:</h3>
+                <p class="text-center">{{confidence}}</p>
 
-            console.log(data);
-            console.log(data.length);
-            let list_t = document.getElementById("treatment");
-            for (i = 0; i < data.length; ++i) {
-                let li = document.createElement('li');
-                li.innerText = data[i];
-                list_t.appendChild(li);
-            }
-        </script>
+                <p> {{description}}</p>
+
+                <h3 class="text-center">Symptoms:</h3>
+                <ul id="symptoms">
+                </ul>
+                <script>
+                    var data = JSON.parse('{{symptoms | tojson | safe}}');
+
+                    console.log(data);
+                    console.log(data.length);
+                    let list_s = document.getElementById("symptoms");
+                    for (i = 0; i < data.length; ++i) {
+                        let li = document.createElement('li');
+                        li.innerText = data[i];
+                        list_s.appendChild(li);
+                    }
+                </script>
+
+                <h3 class="text-center">Causes:</h3>
+                <ul id="causes">
+                </ul>
+                <script>
+                    var data = JSON.parse('{{causes | tojson | safe}}');
+
+                    console.log(data);
+                    console.log(data.length);
+                    let list = document.getElementById("causes");
+                    for (i = 0; i < data.length; ++i) {
+                        let li = document.createElement('li');
+                        li.innerText = data[i];
+                        list.appendChild(li);
+                    }
+                </script>
+
+                <h3 class="text-center">Treatments:</h3>
+                <ul id="treatment">
+                </ul>
+                <script>
+                    var data = JSON.parse('{{treatment | tojson | safe}}');
+
+                    console.log(data);
+                    console.log(data.length);
+                    let list_t = document.getElementById("treatment");
+                    for (i = 0; i < data.length; ++i) {
+                        let li = document.createElement('li');
+                        li.innerText = data[i];
+                        list_t.appendChild(li);
+                    }
+                </script>
+
+
+            </div>
+
+        </div>
     </div>
 
 

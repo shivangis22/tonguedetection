@@ -103,12 +103,8 @@
         {
             "predicted_class": "oralcancerdataset",
             "condition": "Oral Cancer",
-            "description": ["Oral cancer affects your lips and the first parts of your tongue, mouth roof and floor. It also affects your oropharynx — the last part of your tongue and roof of your mouth, your tonsils and the sides and back of your throat.",
+            "description": "Oral cancer affects your lips and the first parts of your tongue, mouth roof and floor. It also affects your oropharynx — the last part of your tongue and roof of your mouth, your tonsils and the sides and back of your throat.TI-The tumor in your mouth measures 2 centimeters or less. T2-The tumor is 2 centimeters or smaller but is not larger than 4 centimeters.T3-The tumor is larger than 4 centimeters.",
 
-                "TI: The tumor in your mouth measures 2 centimeters or less.",
-                "T2: The tumor is 2 centimeters or smaller but isn’t larger than 4 centimeters.",
-                "T3: The tumor is larger than 4 centimeters."
-            ],
             "causes": [
                 "Smoke cigarettes, cigars or pipes.",
                 "Use smokeless tobacco products such as chewing tobacco, dip, snuff or water pipes (hookah or shisha).",

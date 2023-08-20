@@ -32,6 +32,7 @@ with open(r".\saved_model\details.json", 'r') as source_file:
     if 'disease_condition' in CONDITION_DATA:
      disease_con= CONDITION_DATA['disease_condition']
 
+
 @app.route('/', methods=['GET'])
 def hello_word():
     return render_template('index.html')
